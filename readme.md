@@ -1,4 +1,4 @@
-###**PG26 T1 Web Apps 1 - Ax: Assignment Name**
+###**PG26 T1 Intro to Programming in HTML5 & JavaScript - A1: Class Bio Web Page**
 Submitted by: <pg26xav> Xav Laugo
 Date: <1/10/24>
 
