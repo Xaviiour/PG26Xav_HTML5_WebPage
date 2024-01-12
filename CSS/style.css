@@ -1,0 +1,141 @@
+/* Copyright (C), 2024 Xav Laugo, All Rights Reserved */
+header{
+    background: rgb(56, 56, 56);
+    font-size: 84px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 22.7em;
+    height: 120px;
+    }
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+}
+td{ /*Style preferences for the table data*/
+    margin-left: 10px;    
+    width: 310px;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+tr:nth-child(even){ /*Even table rows are for the information of the students*/
+        height: 150px;
+        font-size: small;
+    }
+tr:nth-child(odd){ /*Odd table rows are for the photos of the students if they have provided them*/
+        background-color: rgb(130, 130, 130);
+    }
+tr,td{
+        text-align: center;
+        border: 5px solid rgb(124, 0, 0);
+        border-radius: 10px;
+    }
+table{
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 430px;
+    border: 5px solid rgb(124, 0, 0);
+    border-spacing: 15px;
+    border-radius: 10px;
+    table-layout: fixed;
+    min-width: 1400px;
+}
+footer{
+        background: rgb(56, 56, 56);
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+        margin-top: auto;
+        width: 330px;
+        left: 0;
+        top: 1845px;
+        position: absolute;
+    }
+ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        left: 0;
+        overflow: auto;
+    }
+li a{
+        display: block;
+        text-decoration: none;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 27px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        color: black;
+        overflow: auto;
+    }
+li a:hover {
+        background-color: rgb(124, 0, 0);
+        color: white;
+        margin-bottom: 10px;
+    }
+li{
+        border-bottom: 2px dashed rgb(124, 0, 0);
+    }
+li:last-child{
+        border-bottom: none;
+    }
+u{
+    font-size: 30px;
+    font-weight: bold;
+}
+.side{ /*Sidebar preferences*/
+        float: left;
+        left: 0;
+        margin-top: 110px;
+        width: 350px;
+        height: 1800px;
+        text-align: center;
+        background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 28px;
+        position: absolute;
+    }
+.side-names{ /*These are for the listed names on the sidebar*/
+    font-size: 22px;
+    text-align: left; 
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    font-weight: bold;
+}
+.students{ /*This is where the tables are put in (for the body of the site)*/
+        float: left;
+        margin-left: 10pxs;
+    }
+.class-txt{ /*More side bar preferences*/
+        background-color: rgb(124, 0, 0);
+        color: antiquewhite;
+        font-weight: bold;
+    }
+.table1{
+    margin-top: 150px;
+}
+.table2{
+    margin-top: 705px;
+}
+.table3{
+    margin-top: 1255px;
+}

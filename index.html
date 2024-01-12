@@ -1,178 +1,80 @@
 <!DOCTYPE html>
+<!-- Copyright (C), 2024 Xav Laugo, All Rights Reserved -->
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <head>
     <title>PG26 Students</title>
-    <style>
-        header{
-        top: 0px;
-        left: 0px;
-        font-size: 84px;
-        text-align: center;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        position: absolute;
-        color: white;
-        background: rgb(56, 56, 56);
-        width: 100%;
-        height: 150px;
-        }
-        td{ /*Style preferences for the table data*/
-            width: 310px;
-            color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 16px;
-        }
-        tr:nth-child(even){ /*Even table rows are for the information of the students*/
-            height: 150px;
-            font-size: small;
-        }
-        tr:nth-child(odd){ /*Odd table rows are for the photos of the students if they have provided them*/
-            background-color: rgb(130, 130, 130);
-        }
-        table,tr,td{
-            text-align: center;
-            border: 5px solid rgb(124, 0, 0);
-            border-radius: 10px;
-            margin-top: -5px;
-            margin-left: 430px;
-            border-spacing: 15px;
-            position: static;
-        }
-        .side{ /*Sidebar preferences*/
-            float: left;
-            left: 0px;
-            margin-top: 142px;
-            width: 350px;
-            height: 1815px;
-            background-color: white;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 28px;
-            position: absolute;
-        }
-        .names{ /*These are for the listed names on the sidebar*/
-            font-size: 22px;
-            text-align: left; 
-            top: 0;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .students{ /*This is where the tables are put in (for the body of the site)*/
-            float: left;
-            margin-left: 10pxs;
-        }
-        .class-txt{ /*More side bar preferences*/
-            background-color: rgb(124, 0, 0);
-            color: antiquewhite;
-        }
-        footer{
-            background: rgb(56, 56, 56);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 330px;
-        }
-        ul{ /*Everything under ul is all for the navigation to move you to the correct student and style preferences*/
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 350px;
-            left: 0;
-            overflow: auto;
-        }
-        li a{
-            display: block;
-            text-decoration: none;
-            margin-top: 10px;
-            color: black;
-        }
-        li a:hover {
-            background-color: rgb(124, 0, 0);
-            color: white;
-        }
-        li{
-            border-bottom: 2px dashed rgb(124, 0, 0);
-            margin-bottom: 15px;
-        }
-        li:last-child{
-            border-bottom: none;
-        }
-    </style> 
-    <body style="background-color: black;">
+    <body>
         <header>
-            <div style="margin-top: 17px;">
-                <b>WELCOME TO PG26</b>            
-            </div>
+            WELCOME TO PG26
         </header>
-        <div class="side" style="text-align: center;left: 0px;"> <!-- SIDE BAR STARTS HERE -->
-            <img src="/Images/logo.PNG" alt="logo" style="width: 210px;height:256px">
+        <div class="side"> <!-- SIDE BAR STARTS HERE -->
+            <img src="./Images/logo.PNG" alt="logo" style="width: 210px;height:256px">
             <div class="class-txt">
-                <b>PG26</b>
+                PG26
             </div>
-            <div class="names">
-                <ul>
-                    <li><a href=#AlexGulewich><b style="margin-left: 25px;">Alex Gulewich</a></li></b>
-                    <li><a href=#AlisaHo><b style="margin-left: 25px;">Alisa Ho</a></li></b>
-                    <li><a href=#HenryWilliams><b style="margin-left: 25px;">Henry Williams</a></li></b>
-                    <li><a href=#LevZitron><b style="margin-left: 25px;">Lev Zitron</a></li></b>
-                    <li><a href=#LeviSpevakow><b style="margin-left: 25px;">Levi Spevakow</a></li></b>
-                    <li><a href=#MaxChoi><b style="margin-left: 25px;">Max Choi</a></li></b>
-                    <li><a href=#PaigeMorrison><b style="margin-left: 25px;">Paige Morrison</a></li></b>
-                    <li><a href=#PreethamMukundan><b style="margin-left: 25px;">Preetham Mukundan</a></li></b>
-                    <li><a href=#RobertSenatorov><b style="margin-left: 25px;">Robert Senatorov</a></li></b>
-                    <li><a href=#SpencerPaynterRepay><b style="margin-left: 25px;">Spencer Paynter-Repay</a></li></b>
-                    <li><a href=#TeeRudy><b style="margin-left: 25px;">Tee Rudy</a></li></b>
-                    <li><a href=#XavLaugo><b style="margin-left: 25px;">Xav Laugo</a></li></b>                
+            <div>
+                <ul class="side-names">
+                    <li><a href=#AlexGulewich>Alex Gulewich</a></li>
+                    <li><a href=#AlisaHo>Alisa Ho</a></li>
+                    <li><a href=#HenryWilliams>Henry Williams</a></li>
+                    <li><a href=#LevZitron>Lev Zitron</a></li>
+                    <li><a href=#LeviSpevakow>Levi Spevakow</a></li>
+                    <li><a href=#MaxChoi>Max Choi</a></li>
+                    <li><a href=#PaigeMorrison>Paige Morrison</a></li>
+                    <li><a href=#PreethamMukundan>Preetham Mukundan</a></li>
+                    <li><a href=#RobertSenatorov>Robert Senatorov</a></li>
+                    <li><a href=#SpencerPaynterRepay>Spencer Paynter-Repay</a></li>
+                    <li><a href=#TeeRudy>Tee Rudy</a></li>
+                    <li><a href=#XavLaugo>Xav Laugo</a></li>         
                 </ul>
             </div>
-        </div>
-        <div class="students"> <!-- THIS IS WITHIN THE BODY OF THE HTML. THE TABLE STARTS HERE -->
-            <nav>
-                <table style="margin-top: 161px;">
-                    <tr> <!--Images-->
-                        <td style="text-align: center;"><img src="/Images/alex.jpg" alt="Picture of Alex" style="width: 243px;height:324px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/alisa.jpg" alt="Picture of Alisa" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/henry.jpg" alt="Picture of Henry" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/lev.jpg" alt="Picture of Lev" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                    </tr>
-                    <tr> <!--Names-->
-                        <section id="AlexGulewich"><td><b><u style="font-size: 30px;">_Alex_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is Java.<br>Hasn't coded in Java in a long time.<br>Made a game last year in C#.</p></td></section>
-                        <section id="AlisaHo"><td><b><u style="font-size: 30px;">_Alisa_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is TypeScript. Skydiving is the best<br>thing they have ever done.</p></td></section>
-                        <section id="HenryWilliams"><td><b><u style="font-size: 30px;">_Henry_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is C++.<br>They appreciate game design and loves clean combat systems.</p></td></section>
-                        <section id="LevZitron"><td><b><u style="font-size: 30px;">_Lev_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is GDscript. Fun fact about them is that they always wear a sweater.</p></td></section>
-                    </tr>
-                </table>
-                <table>
-                    <tr> <!--Images-->
-                        <td style="text-align: center;"><img src="/Images/levi.jpg" alt="Picture of Levi" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/max.jpg" alt="Picture of Max" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/paige.jpg" alt="Picture of Paige" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/preetham.jpg" alt="Picture of Preetham" style="width: 251px;height:333px;border-radius: 10px;"></td>
-                    </tr>
-                    <tr> <!--Names-->
-                        <section id="LeviSpevakow"><td><b><u style="font-size: 30px;">_Levi_</u></b><br><p style="text-align: left;margin-left: 10px;">Favorite coding language is C++.<br>Fun fact about them is that they snowboard.</p></td></section>
-                        <section id="MaxChoi"><td><b><u style="font-size: 30px;">_Max_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is C#.<br>Fun fact about them is that<br>they have a cat.</p></td></section>
-                        <section id="PaigeMorrison"><td><b><u style="font-size: 30px;">_Paige_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is C#.<br>Fun fact about them is that their favourite coding language isn't really C#. It's just the only one they remember the best.</p></td></section>
-                        <section id="PreethamMukundan"><td><b><u style="font-size: 30px;">_Preetham_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is C++.<br>Fun fact about them is that<br>they have a twin.</p></td></section>
-                    </tr>
-                </table>
-                <table>
-                    <tr> <!--Images-->
-                        <td style="text-align: center;"><img src="/Images/robert.png" alt="Picture of Robert" style="width: 270px;height:270px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/spencer.png" alt="Picture of Spencer" style="width: 274px;height:366px;border-radius: 10px;"></td>
-                        <td style="text-align: center;"><img src="/Images/tee.jpg" alt="Picture of Tee" style="width: 250px;height:250px;border-radius: 10px;"></td>
-                        <section id="XavLaugo"><td style="text-align: center;"><img src="/Images/xav.jpg" alt="Picture of Xav" style="width: 265px;height:350px;border-radius: 10px;"></td></section>
-                    </tr>
-                    <tr> <!--Names-->
-                        <section id="RobertSenatorov"><td><b><u style="font-size: 30px;">_Robert_</u></b><br><p style="text-align: left;margin-left: 10px; margin-right: 10px;">Favourite coding language is C.<br>Fun fact about them is that they play chess.</p></td></section>
-                        <section id="SpencerPaynterRepay"><td><b><u style="font-size: 30px;">_Spencer_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is Julia.<br>Fun fact about them is that their favourite film is Speed Racer(2008).</p></td></section>
-                        <section id="TeeRudy"><td><b><u style="font-size: 30px;">_Tee_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is Python. Fun fact about them is that they have a pet hamster!</p></td></section>
-                        <td><b><u style="font-size: 30px;">_Xav_</u></b><br><p style="text-align: left;margin-left: 10px;">Favourite coding language is C#.<br>Fun fact about me is that I am left handed. I have made a game that is currently in the process of being put on a major website. I am also apart of a small group of artists and programmers to produce a game based off a book series!*</p></td>
-                    </tr>
-                </table>    
-            </nav>
-        </div>
-    <footer>
-        <p>Made by PG26 Xav. Made in Jan 2024.<br>Class: Introduction to HTML.<br><br>*It is currently under a NDA contract. I cannot disclose anything further.</p>
-    </footer>
+        </div> <!-- SIDE BAR ENDS HERE -->
+        <table class="table1"> <!-- THIS IS WITHIN THE BODY OF THE HTML. THE TABLE STARTS HERE -->
+            <tr> <!--Images-->
+                <td><img src="./Images/alex.jpg" alt="Picture of Alex"></td>
+                <td><img src="./Images/alisa.jpg" alt="Picture of Alisa"></td>
+                <td><img src="./Images/henry.jpg" alt="Picture of Henry"></td>
+                <td><img src="./Images/lev.jpg" alt="Picture of Lev"></td>
+            </tr>
+            <tr> <!--Names-->
+                <section id="AlexGulewich"><td><u>_Alex_</u><br>Favourite coding language is Java.<br>Hasn't coded in Java in a long time.<br>Made a game last year in C#.</td></section>
+                <section id="AlisaHo"><td><u>_Alisa_</u><br>Favourite coding language is TypeScript. Skydiving is the best<br>thing they have ever done.</td></section>
+                <section id="HenryWilliams"><td><u>_Henry_</u><br>Favourite coding language is C++.<br>They appreciate game design and loves clean combat systems.</td></section>
+                <section id="LevZitron"><td><u>_Lev_</u><br>Favourite coding language is GDscript. Fun fact about them is that they always wear a sweater.</td></section>
+            </tr>
+        </table>
+        <table class="table2">
+            <tr> <!--Images-->
+                <td><img src="./Images/levi.jpg" alt="Picture of Levi"></td>
+                <td><img src="./Images/max.jpg" alt="Picture of Max"></td>
+                <td><img src="./Images/paige.jpg" alt="Picture of Paige"></td>
+                <td><img src="./Images/preetham.jpg" alt="Picture of Preetham"></td>
+            </tr>
+            <tr> <!--Names-->
+                <section id="LeviSpevakow"><td><u>_Levi_</u><br>Favorite coding language is C++.<br>Fun fact about them is that they snowboard.</td></section>
+                <section id="MaxChoi"><td><u>_Max_</u><br>Favourite coding language is C#.<br>Fun fact about them is that<br>they have a cat.</td></section>
+                <section id="PaigeMorrison"><td><u>_Paige_</u><br>Favourite coding language is C#.<br>Fun fact about them is that their favourite coding language isn't really C#. It's just the only one they remember the best.</td></section>
+                <section id="PreethamMukundan"><td><u>_Preetham_</u><br>Favourite coding language is C++.<br>Fun fact about them is that<br>they have a twin.</td></section>
+            </tr>
+        </table>
+        <table class="table3">
+            <tr> <!--Images-->
+                <td><img src="./Images/robert.png" alt="Picture of Robert"></td>
+                <td><img src="./Images/spencer.png" alt="Picture of Spencer"></td>
+                <td><img src="./Images/tee.jpg" alt="Picture of Tee"></td>
+                <td><img src="./Images/xav.jpg" alt="Picture of Xav"></td>
+            </tr>
+            <tr> <!--Names-->
+                <section id="RobertSenatorov"><td><u>_Robert_</u><br>Favourite coding language is C.<br>Fun fact about them is that they play chess.</td></section>
+                <section id="SpencerPaynterRepay"><td><u>_Spencer_</u><br>Favourite coding language is Julia.<br>Fun fact about them is that their favourite film is Speed Racer(2008).</td></section>
+                <section id="TeeRudy"><td><u>_Tee_</u><br>Favourite coding language is Python. Fun fact about them is that they have a pet hamster!</td></section>
+                <section id="XavLaugo"><td><u>_Xav_</u><br>Favourite coding language is C#.<br>Fun fact about me is that I am left handed. I have made a game that is currently in the process of being put on a major website. I am also apart of a small group of artists and programmers to produce a game based off a book series!*</td></section>
+            </tr>
+        </table>    
+        <footer>
+            <div class="copyright">
+                ©2024 Xav Laugo, All Rights Reserved<br><br>*It is currently under a NDA contract. I cannot disclose anything further.
+            </div>
+        </footer>
     </body>
 </head>
