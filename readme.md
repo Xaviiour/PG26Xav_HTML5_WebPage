@@ -1,4 +1,4 @@
-###PG26 T1 Intro to Programming in HTML5 & JavaScript - A1: Class Bio Web Page Submitted by: Xav Laugo Date: <1/10/24>
+###PG26 T1 Intro to Programming in HTML5 & JavaScript - A1: Class Bio Web Page Submitted by: Xav Laugo Date: <1/11/24>
 
 This is a HTML assignment where I am to make a web page that includes a header, footer, sidebar, navigation, body text, and space for images to create a class biography web page. This assignment also includes a pdf file of my draft of the website to show my understanding of the basic box model.
 
